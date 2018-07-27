@@ -1,9 +1,9 @@
 # Change these
-server ENV['server'], port: ENV['port'], roles: [:web, :app, :db], primary: true
+server ENV['SERVER'], port: ENV['PORT'], roles: [:web, :app, :db], primary: true
 
-set :repo_url,        ENV['repo_url']
-set :application,     ENV['application']
-set :user,            ENV['user']
+set :repo_url,        ENV['REPO_URL']
+set :application,     ENV['APPLICATION']
+set :user,            ENV['USER']
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
