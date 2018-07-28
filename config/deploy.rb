@@ -2,8 +2,8 @@
 server ENV['SERVER'], port: ENV['PORT'], roles: [:web, :app, :db], primary: true
 
 set :repo_url,        ENV['REPO_URL']
-set :application,     ENV['APPLICATION']
-set :user,            ENV['USER']
+set :application,     ENV['APPLICATION_NAME']
+set :user,            ENV['SERVER_USER']
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
